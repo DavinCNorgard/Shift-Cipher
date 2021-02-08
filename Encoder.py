@@ -1,8 +1,10 @@
+#convert function: This function converts a list of various types into a list.
 def convert(mix_list):
   full_str = ''.join([str(elem) for elem in mix_list])
   return full_str
 
-
+#decode function: Takes an encrypted string, and a unique key to decrpypt.
+#output: the decrypted string.
 def decode(string, key):
     
   string = list(string)
@@ -45,7 +47,8 @@ def decode(string, key):
   return list_final
 
 
-
+#encode function: Takes a string, and a unique key to encrypt the string.
+#output: the encrypted string.
 def encode(string, key):
       
   alphabet = ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
